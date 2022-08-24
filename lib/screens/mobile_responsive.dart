@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../theme/colors.dart';
+import 'mobile_fragments/contact_list_fragment.dart';
+import 'mobile_fragments/view_calls_fragment.dart';
+import 'mobile_fragments/view_status_fragment.dart';
 
 class MobileResponsive extends StatefulWidget {
   const MobileResponsive({Key? key}) : super(key: key);
@@ -58,9 +61,11 @@ class _MobileResponsiveState extends State<MobileResponsive> {
             ],
           ),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
-
+            ContactListFragment(),
+            ViewCallsFragment(),
+            ViewStatusFragment(),
           ],
         ),
       ),

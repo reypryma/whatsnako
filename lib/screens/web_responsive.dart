@@ -10,6 +10,13 @@ class WebResponsive extends StatefulWidget {
 class _WebResponsiveState extends State<WebResponsive> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Row(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+
+        ],
+      ),
+    );
   }
 }
