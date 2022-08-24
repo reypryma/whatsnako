@@ -15,6 +15,14 @@ class ResponsiveHelper {
     return kIsWeb;
   }
 
+  static bool isConstraintRange(BoxConstraints constraint, range){
+    if (constraint.maxWidth < range) {
+      return true;
+    }  else{
+      return false;
+    }
+  }
+
   static bool isMobile(context) {
     final size = MediaQuery.of(context).size.width;
     if (size <= 650 || !kIsWeb) {

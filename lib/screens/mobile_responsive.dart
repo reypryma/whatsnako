@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nb_utils/nb_utils.dart';
+import 'package:whatsnako/utils/constants.dart';
+import 'package:whatsnako/utils/images.dart';
 
 import '../theme/colors.dart';
 import 'mobile_fragments/contact_list_fragment.dart';
@@ -15,6 +18,7 @@ class MobileResponsive extends StatefulWidget {
 class _MobileResponsiveState extends State<MobileResponsive> {
   @override
   Widget build(BuildContext context) {
+    double widthStart = MediaQuery.of(context).size.width;
     return DefaultTabController(
       length: 3,
       child: Scaffold(
@@ -23,7 +27,7 @@ class _MobileResponsiveState extends State<MobileResponsive> {
           backgroundColor: appBarColor,
           centerTitle: false,
           title: const Text(
-            'WhatsApp',
+            APPS_NAME,
             style: TextStyle(
               fontSize: 20,
               color: Colors.grey,
@@ -61,12 +65,23 @@ class _MobileResponsiveState extends State<MobileResponsive> {
             ],
           ),
         ),
-        body: const TabBarView(
-          children: [
-            ContactListFragment(),
-            ViewCallsFragment(),
-            ViewStatusFragment(),
-          ],
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(WhatsNakoImage.bgThanks),
+              opacity: .2,
+              fit: BoxFit.cover,
+            ),
+          ),
+          height: double.maxFinite,
+          width: 900,
+          child: TabBarView(
+            children: [
+              ContactListFragment(),
+              ViewStatusFragment(),
+              ViewCallsFragment(),
+            ],
+          ),
         ),
       ),
     );

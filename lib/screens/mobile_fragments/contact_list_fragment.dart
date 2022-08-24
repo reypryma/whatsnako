@@ -18,6 +18,8 @@ class _ContactListFragmentState extends State<ContactListFragment> {
       padding: const EdgeInsets.only(top: 10),
       child: ListView.builder(
           shrinkWrap: true,
+          scrollDirection: Axis.vertical,
+          // physics: const NeverScrollableScrollPhysics(),
           itemCount: info.length,
           itemBuilder: (context, index) {
             return Column(

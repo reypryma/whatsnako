@@ -1,3 +1,5 @@
+import 'package:whatsnako/utils/images.dart';
+
 const info = [
   {
     'name': 'Elon',
@@ -7,18 +9,18 @@ const info = [
         'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
   },
   {
-    'name': 'John Doe',
+    'name': 'Bocchi',
     'message': 'Hello, whats up',
     'time': '2:25 pm',
     'profilePic':
-        'https://www.socialketchup.in/wp-content/uploads/2020/05/fi-vill-JOHN-DOE.jpg',
+        WhatsNakoImage.profileBocchi,
   },
   {
-    'name': 'Naman Ranawat',
+    'name': 'Sotoka Lucky Star',
     'message': 'Hello, I want to sleep.',
     'time': '1:03 pm',
     'profilePic':
-        'https://media.cntraveler.com/photos/60596b398f4452dac88c59f8/16:9/w_3999,h_2249,c_limit/MtFuji-GettyImages-959111140.jpg',
+        WhatsNakoImage.profileSotockha,
   },
   {
     'name': 'Dad',
