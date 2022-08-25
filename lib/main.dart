@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsnako/screens/mobile_responsive.dart';
 import 'package:whatsnako/screens/web_responsive.dart';
+import 'package:whatsnako/theme/dark_whatsapp.dart';
 import 'package:whatsnako/utils/constants.dart';
 import 'package:whatsnako/utils/responsive_helper.dart';
 
@@ -17,9 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: APPS_NAME,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: AppTheme.WhatsappDark,
       home: const ScreenOptions(
           mobileScreenLayout: MobileResponsive(),
           webScreenLayout: WebResponsive()),

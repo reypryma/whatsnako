@@ -1,7 +1,9 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:nb_utils/nb_utils.dart';
 
+import '../../theme/colors.dart';
 import '../../utils/info.dart';
 
 class ContactListFragment extends StatefulWidget {
@@ -16,10 +18,11 @@ class _ContactListFragmentState extends State<ContactListFragment> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 10),
+      width: context.width(),
+      height: context.height(),
       child: ListView.builder(
           shrinkWrap: true,
           scrollDirection: Axis.vertical,
-          // physics: const NeverScrollableScrollPhysics(),
           itemCount: info.length,
           itemBuilder: (context, index) {
             return Column(
@@ -31,6 +34,7 @@ class _ContactListFragmentState extends State<ContactListFragment> {
                       info[index]['name'].toString(),
                       style: const TextStyle(
                         fontSize: 18,
+                        color: Colors.white
                       ),
                     ),
                     subtitle: Padding(
@@ -54,7 +58,8 @@ class _ContactListFragmentState extends State<ContactListFragment> {
                       ),
                     ),
                   ),
-                )
+                ),
+                const Divider(indent: 85),
               ],
             );
           }),

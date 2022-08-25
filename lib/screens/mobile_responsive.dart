@@ -24,7 +24,7 @@ class _MobileResponsiveState extends State<MobileResponsive> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: appBarColor,
+          backgroundColor: WhatsNakoColor.appBarColor,
           centerTitle: false,
           title: const Text(
             APPS_NAME,
@@ -45,9 +45,9 @@ class _MobileResponsiveState extends State<MobileResponsive> {
             ),
           ],
           bottom: const TabBar(
-            indicatorColor: tabColor,
+            indicatorColor: WhatsNakoColor.tabColor,
             indicatorWeight: 4,
-            labelColor: tabColor,
+            labelColor: WhatsNakoColor.tabColor,
             unselectedLabelColor: Colors.grey,
             labelStyle: TextStyle(
               fontWeight: FontWeight.bold,
@@ -68,14 +68,13 @@ class _MobileResponsiveState extends State<MobileResponsive> {
         body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage(WhatsNakoImage.bgThanks),
-              opacity: .2,
+              colorFilter: ColorFilter.mode(WhatsNakoColor.sidebarColor.withOpacity(0.3), BlendMode.dstATop),
+              image: const AssetImage(WhatsNakoImage.bgThanks),
               fit: BoxFit.cover,
             ),
           ),
           height: double.maxFinite,
-          width: 900,
-          child: TabBarView(
+          child: const TabBarView(
             children: [
               ContactListFragment(),
               ViewStatusFragment(),
