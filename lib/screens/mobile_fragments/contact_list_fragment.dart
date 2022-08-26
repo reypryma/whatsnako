@@ -18,8 +18,8 @@ class _ContactListFragmentState extends State<ContactListFragment> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 10),
-      width: context.width(),
-      height: context.height(),
+      // width: context.width(),
+      // height: context.height(),
       child: ListView.builder(
           shrinkWrap: true,
           scrollDirection: Axis.vertical,
