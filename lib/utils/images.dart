@@ -15,6 +15,7 @@ class WhatsNakoImage {
   static const String profileBocchi = '$BOCCHI_IMAGES_URL/haa.png';
   static const String profileSotockha = '$BOCCHI_IMAGES_URL/sotoka.png';
   static const String profileNako = '$BOCCHI_IMAGES_URL/nako.jpg';
+  static const String profileAru = '$BOCCHI_IMAGES_URL/aru.png';
 
 }
 

@@ -18,4 +18,19 @@ class WhatsNakoColor{
 
   static const sidebarColor = Color(0xff202a35);
 
+
+  static const backgroundColor2 = const Color(0xff343940);
+  static const textFieldBackground = const Color(0xff37404a);
+  static const textOnTextField = const Color(0xffebebeb);
+  static const hintTextOnTextField = const Color(0xffc2c2c2);
+  static const iconOnTextField = const Color(0xffb3b3b3);
+  static const btnColor = const Color(0xff01877c);
+  static const iconOnBtn = const Color(0xffebebeb);
+  static const myChatBG = const Color(0xff054640);
+  static const chatBG = const Color(0xff212e36);
+  static const onMyChat = const Color(0xfff5f5f5);
+  static const onChat = const Color(0xfff5f5f5);
+  static const onBackground = const Color(0xfff5f5f5);
+  static const tickColor = const Color(0xff33a3ca);
+
 }

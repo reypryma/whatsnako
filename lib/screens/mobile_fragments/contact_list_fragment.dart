@@ -25,42 +25,45 @@ class _ContactListFragmentState extends State<ContactListFragment> {
           scrollDirection: Axis.vertical,
           itemCount: info.length,
           itemBuilder: (context, index) {
-            return Column(
-              children: [
-                Container(
-                  padding: const EdgeInsets.only(bottom: 8.0),
-                  child: ListTile(
-                    title: Text(
-                      info[index]['name'].toString(),
-                      style: const TextStyle(
-                        fontSize: 18,
-                        color: Colors.white
+            return InkWell(
+              onTap: (){},
+              child: Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: ListTile(
+                      title: Text(
+                        info[index]['name'].toString(),
+                        style: const TextStyle(
+                          fontSize: 18,
+                          color: Colors.white
+                        ),
                       ),
-                    ),
-                    subtitle: Padding(
-                      padding: const EdgeInsets.only(top: 6.0),
-                      child: Text(
-                        info[index]['message'].toString(),
-                        style: const TextStyle(fontSize: 15),
+                      subtitle: Padding(
+                        padding: const EdgeInsets.only(top: 6.0),
+                        child: Text(
+                          info[index]['message'].toString(),
+                          style: const TextStyle(fontSize: 15),
+                        ),
                       ),
-                    ),
-                    leading: CircleAvatar(
-                      backgroundImage: NetworkImage(
-                        info[index]['profilePic'].toString(),
+                      leading: CircleAvatar(
+                        backgroundImage: NetworkImage(
+                          info[index]['profilePic'].toString(),
+                        ),
+                        radius: 30,
                       ),
-                      radius: 30,
-                    ),
-                    trailing: Text(
-                      info[index]['time'].toString(),
-                      style: const TextStyle(
-                        color: Colors.grey,
-                        fontSize: 13,
+                      trailing: Text(
+                        info[index]['time'].toString(),
+                        style: const TextStyle(
+                          color: Colors.grey,
+                          fontSize: 13,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                const Divider(indent: 85),
-              ],
+                  const Divider(indent: 85),
+                ],
+              ),
             );
           }),
     );

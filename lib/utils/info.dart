@@ -2,11 +2,11 @@ import 'package:whatsnako/utils/images.dart';
 
 const info = [
   {
-    'name': 'Elon',
-    'message': 'Hey, how are you doing?',
+    'name': 'Aru',
+    'message': '4 Da?',
     'time': '3:53 pm',
     'profilePic':
-        'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
+        WhatsNakoImage.profileAru,
   },
   {
     'name': 'Bocchi',

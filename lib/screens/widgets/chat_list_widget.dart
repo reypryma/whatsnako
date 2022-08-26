@@ -37,7 +37,7 @@ class _ChatListWidgetState extends State<ChatListWidget> {
                 )
               )
             ),
-            child: const ContactListFragment()),
+            child: ContactListFragment()),
     );
   }
 }
